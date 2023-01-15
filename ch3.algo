@@ -1,0 +1,21 @@
+ALGORITHM distinct_integer_hash_table
+VAR
+    htab: HASH_TABLE<INTEGER,INTEGER>;
+    i,j:INTEGER;
+    set1:STRING[5];
+    set2:STRING[4];
+
+BEGIN
+    FOR i FROM 0 TO set1.length STEP 1  DO
+        FOR j FROM 0 TO set2.length STEP 1  DO
+            if (set1[i]==set2[j])then
+            htab.insert(set1[i],n)
+        END_FOR
+    END_FOR
+    FOR i FROM 0 TO set1.length STEP 1  DO
+        FOR j FROM 0 TO set2.length STEP 1  DO
+            if (set1[i]==set2[j])then
+            htab.insert(set2[j],n)
+        END_FOR
+    END_FOR
+END

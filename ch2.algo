@@ -1,0 +1,28 @@
+ALGORITHM find_ditinct_integer
+VAR
+    tab:set1[5];
+    tab:set2[4];
+    i,j:INTEGER
+BEGIN
+    sum=0;
+    FOR i FROM 0 TO set1.length STEP 1  DO then
+    FOR j FROM 0 TO set2.length STEP 1  DO
+        IF (set1[i]==set2[j]) THEN
+            break;
+        ELSE IF (set1[i]<>set2[j]) THEN
+                sum:=sum+set1[i]
+            END_IF
+        END_IF
+            END_FOR 
+            FOR i FROM 0 TO set1.length STEP 1  DO then
+    FOR j FROM 0 TO set2.length STEP 1  DO
+        IF (set1[i]==set2[j]) THEN
+            break;
+        ELSE IF (set1[i]<>set2[j]) THEN
+                sum:=sum+set2[j]
+            END_IF
+        END_IF
+            END_FOR   
+   
+END
+
